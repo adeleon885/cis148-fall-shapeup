@@ -1,25 +1,45 @@
-body {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 100%;
-    width: 1020px
-    
-}
-
 header {
     border-bottom: 2px solid steelblue;
     background-image: linear-gradient(
-        white 0%, rgb(174, 207, 235) 100%)
-}
+        white 0%, rgb(174, 207, 235) 100%);
+        padding: 10px;
+        padding-left: 5px; }
 
 img {
     float: left;
     margin-right: 1em;
+    margin: 10px;
+    padding-right: 15px;
 }
-main { 
-    clear: left;
-    width: 725px;
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 100%;
+    width: 1200px;
+    height: auto;
+    margin: 0px;
+}
+
+#sidebar1 {
+    width: 275px;
+    height: auto;
+    float: left;
+    padding: 12.5px;
+    padding-top: 0;
+}
+
+main {
+    width: 600px;
+    height: auto;
+    float: left;
+}
+
+#sidebar2 {
+    width: 275px;
     height: auto;
     float: right;
+    padding: 12.5px;
+    padding-top: 0;
 }
 
 h1 {
@@ -44,21 +64,20 @@ a.class2:link, a.class2:visited {
 
 a.class2:hover, a.class2:focus { color: maroon }
 
+ul li {
+    margin-bottom: 4px;
+    position: relative;
+}
+
+ul {
+    margin-left: 0px;
+    padding-left: 0px;
+}
 footer p {
     font-size: 80%;
     text-align: center;
     color: white;
     padding: 1.5em;
-}
-
-ul li {
-    margin-bottom: 4px;
-}
-
-aside {
-    width: 275px;
-    float: left;
-    padding-left: 20px;
 }
 
 footer {
@@ -69,16 +88,4 @@ footer {
 
 #AR {
     color: maroon;
-    align-items: center;
-}
-
-header {
-    padding: 10px;
-    padding-left: 5px;
-}
-
-img {
-    margin: 10px;
-    padding: 10px;
-    padding-right: 15px;
 }
