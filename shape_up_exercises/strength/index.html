@@ -4,12 +4,76 @@
 <head>
 	<meta charset="utf-8">
 	<title>Shape Up! | Strength Training</title>
+    <link rel="shortcut icon" href="favicon2.ico">
+    <link rel="stylesheet" href="strength.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles/slicknav.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/jquery.slicknav.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('#nav_menu').slicknav({prependTo:"#mobile_menu"});
+        });
+    </script>
 </head>
 
 <body>
+		<header>
+			<a href="index.html"> <img src="shape_up_logo.png" alt="Shape Up Logo"></a>
+			<h1>Shape Up!</h1>
+			<h3 id="header2">Find the best fit for you</h3>
+		</header>
+		<nav id="mobile_menu"></nav>
+		<nav id="nav_menu">
+			<ul>
+				<li><a href="index.html" >Home</a></li>
+				<li><a href="strength/index.html" class="current">Strength Training</a></li>
+				<li><a href="cardio/index.html">Cardio Exercises</a></li>
+				<li><a href="stress/index.html">Stress Relief</a></li>
+				<li><a href="diet/index.html">Healthy Diets</a></li>
+			</ul>
+		</nav>
 	<main>
-	    <h1>Strength Training</h1>
-		<h2>Under Construction</h2>
-	</main>
+		<aside> 
+			<h2 id="AR">Additional resources</h2>
+			<blockquote>
+			<ul>
+				<li> <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9710390/" class="class2" >Physical activity and health</a></li>
+				<li> <a href="https://www.mayoclinic.org/healthy-lifestyle/fitness/in-depth/stretching/art-20546848" class="class2" >Stretching Exercises</a></li>
+				<li> <a href="https://www.mayoclinic.org/healthy-lifestyle/fitness/in-depth/strength-training/art-20046670" class="class2" >Strength training</a></li>
+				<li> <a href="https://www.healthline.com/health/fitness-exercise/cardio-exercises-list" class="class2" >Cardiovascular training</a></li>
+				<li> <a href="https://www.self.com/gallery/power-yoga-workout" class="class2" >Yoga workout</a></li>
+			</ul>
+			</blockquote>
+		</aside>
+		<article>
+        <h2 id="header3">Strength Training</h2>
+        <p> Strength training is a type of physical exercise that uses resistance to induce muscular contraction. 
+			This builds the strength, anaerobic endurance, and size of skeletal muscles.
+        </p>
+        <h3 class="class1"> Benefits</h3>
+            <p>When properly performed, strength training can provide significant functional benefits and improvement in overall health and well-being. Some 
+				of the benefits are:
+            </p>
+			<ul>
+				<li>increased bone, muscle, tendon, and ligament strength and toughness</li>
+				<li>improved joint function</li>
+				<li>reduced potential for injury</li>
+				<li>increased bone density</li>
+				<li>increased metabolism</li>
+				<li>improved cardiac function</li>
+			</ul>
+        <h3 class="class1">Exercises and sports</h3>
+            <p>Training commonly uses the technique of progressively increasing the force output of the muscle through incremental weight increases. 
+				It uses a variety of exercises and types of equipment to target specific muscle groups.
+			</p>
+			<p>Some sports where strength training is central are bodybuilding, weightlifting, shotput, discus throw, and javelin throw. Many other sports use strength training as
+				 part of their training regimen. These include tennis, American football, wrestling, track and field, rowing, lacrosse, basketball, hockey, wrestling, and soccer.
+			</p>
+		</article>
+    </main>
+    <footer>
+        <p>&copy; 2022 Shape Up!</p>
+    </footer>
 </body>
 </html>
