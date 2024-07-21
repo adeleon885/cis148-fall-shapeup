@@ -227,6 +227,14 @@ a {
     .slicknav_nav a:hover {
         background-color: lightsteelblue !important;
     }
+    .slicknav_nav {
+        background-color: steelblue !important;
+    }
+    
+    .slicknav_btn {
+        background-color: steelblue !important;
+        color: white !important;
+    }
     header h1 {
         font-size: 200%;}
         
