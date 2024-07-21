@@ -3,13 +3,77 @@
 <html lang="en">
 <head>
 	<meta charset="utf-8">
-	<title>Shape Up! | Stress Relief Tips</title>
+	<title>Shape Up! | Stress</title>
+	<link rel="stylesheet" href="slicknav.css">
+    <link rel="shortcut icon" href="favicon2.ico">
+    <link rel="stylesheet" href="/styles/main.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="jquery.slicknav.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('#nav_menu').slicknav({prependTo:"#mobile_menu"});
+        });
+    </script>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Playwrite+CU:wght@100..400&display=swap" rel="stylesheet">
 </head>
-
 <body>
-	<main>
-	    <h1>Stress relief tips</h1>
-		<h2>Under Construction</h2>
-	</main>
+    <header>
+        <a href="index.html"> <img src="/images/shape_up_logo.webp" alt="Shape Up Logo"></a>
+        <h1>Shape Up!</h1>
+        <h3 id="header2">Find the best fit for you</h3>
+    </header>
+    <nav id="mobile_menu"></nav>
+    <nav id="nav_menu">
+        <ul>
+            <li><a href="index.html" >Home</a></li>
+            <li><a href="strength/index.html" class="current">Strength Training</a></li>
+            <li><a href="cardio/index.html">Cardio Exercises</a></li>
+            <li><a href="stress/index.html">Stress Relief</a></li>
+            <li><a href="diet/index.html">Healthy Diets</a></li>
+        </ul>
+    </nav>
+<main>
+    <article>
+    <h2 id="StressR">Stress Relief Tips</h2>
+    <p>Here are five tips that can help you relieve stress on a daily basis.
+    </p>
+    <h3 class="class1"><img src="/images/break.jpg" class="tip-icon" alt="Take a break icon">Take a break from what you're doing	</h3>
+        <p>
+			Maybe it's hard to get away from a big work project, a crying baby or a growing credit card bill. But give yourself permission to step away from it for a short time. Don't avoid your stressors (those bills have to be paid sometime), but take a few minutes for yourself.
+		</p>
+    <h3 class="class1"><img src="/images/exercise.jpg" class="tip-icon" alt="Exercise icon">Exercise on a regular basis</h3>
+        <p>Exercise is a huge part of being healthy, and it benefits your mind as well as your body. It doesn't have to be an hour a day; even a 20-minute walk in the midst of a stressful time can give you an immediate effect that can last for several hours.
+        </p>
+	<h3 class="class1"><img src="/images/smile.jpg" class="tip-icon" alt="Smile icon">Take time to smile and laugh</h3>
+        <p>When people are stressed, they often hold a lot of the stress in their face. Laughs and smiles can help relieve some of that tension and improve the situation. And if you share your smile with someone else, it will them release some of their tension too!
+        </p>
+	<h3 class="class1"><img src="/images/support.jpg" class="tip-icon" alt="Support icon">Get support from family and friends</h3>
+        <p>Call a friend, send an email. Sharing your concerns does help relieve stress. But pick a person who you feel can understand you. If your co-workers are the stressors, it probably won't alleviate your stress if you share your worries over credit card bills with one of them.
+        </p>
+	<h3 class="class1"><img src="/images/meditate.jpg" class="tip-icon" alt="Take a break icon">Meditate</h3>
+        <p>Meditation helps the mind and body to relax and focus. When meditating, people can release emotions that may have been causing the body physical stress. Research has shown that even meditating briefly can reap immediate benefits.
+        </p>
+    </article>
+    <aside> 
+        <h2 id="AR">Additional resources</h2>
+        <nav>
+        <blockquote>
+        <ul>
+            <li> <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9710390/" class="class2" >Physical activity and health</a></li>
+            <li> <a href="https://www.mayoclinic.org/healthy-lifestyle/fitness/in-depth/stretching/art-20546848" class="class2" >Stretching Exercises</a></li>
+            <li> <a href="https://www.mayoclinic.org/healthy-lifestyle/fitness/in-depth/strength-training/art-20046670" class="class2" >Strength training</a></li>
+            <li> <a href="https://www.healthline.com/health/fitness-exercise/cardio-exercises-list" class="class2" >Cardiovascular training</a></li>
+            <li> <a href="https://www.self.com/gallery/power-yoga-workout" class="class2" >Yoga workout</a></li>
+        </ul>
+        </blockquote>
+        </nav>
+    </aside>
+</main>
+<footer>
+    <p>&copy; 2022 Shape Up!</p>
+</footer>
 </body>
 </html>

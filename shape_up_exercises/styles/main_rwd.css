@@ -24,10 +24,25 @@ img {
     height: auto;
 }
 main { 
-    clear: left;
-    width: 725px;
+    clear: both;
+    width: 95%;
     height: auto;
-    float: none;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 1em;
+    grid-template: auto / 1fr 65%;
+    grid-gap: 2%;
+    grid-template-areas: "arti side";
+    height: 55em;
+}
+
+article {
+    grid-area: side;
+    padding-left: 2em;
+}
+aside {
+    grid-area: arti;
+    padding: 5%;
 }
 
 h1 {
@@ -69,6 +84,7 @@ footer p {
     text-align: center;
     color: white;
     padding: 1.5em;
+    margin: -20px;
 }
 
 ul li {
@@ -77,7 +93,7 @@ ul li {
 
 aside {
     width: 100%;
-    float: none;
+    float: left;
     padding-left: 1em;
 }
 
@@ -85,6 +101,7 @@ footer {
     clear: both;
     background-color: steelblue;
     height: 3em;
+    padding-bottom: 75px;
 }
 
 #AR {
@@ -146,9 +163,9 @@ header {
     max-width: 96.5%;
 }
 #nav_menu ul ul {
-    display: none; /* Initially hide submenus */
+    display: none;
     position: absolute;
-    top: 100%; /* Position below parent item */
+    top: 100%;
     left: 0;
     margin-top: 0;
     padding: 0;
@@ -244,7 +261,7 @@ a {
         border: none;
     }
     header img {float: left;}
-    header, footer p {text-align: left;}
+    header {text-align: left;}
     article {
         width: 95%;
         float: none;
@@ -284,4 +301,14 @@ a {
         float: none;
         padding-left: 0;
     }
+}
+
+#credits, #credits a, #credits a:link, #credits a:visited, #credits a:active {
+    color: black;
+}
+
+.icons {
+    width: 32px;
+    padding-bottom: 1em;
+    float: left;
 }
