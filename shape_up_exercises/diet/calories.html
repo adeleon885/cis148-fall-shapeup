@@ -4,12 +4,184 @@
 <head>
 	<meta charset="utf-8">
 	<title>Shape Up! | Calorie Counter</title>
+	<link rel="stylesheet" href="slicknav.css">
+    <link rel="shortcut icon" href="/images/favicon.ico">
+    <link rel="stylesheet" href="/diet/main.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="jquery.slicknav.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('#nav_menu').slicknav({prependTo:"#mobile_menu"});
+        });
+    </script>
 </head>
 
 <body>
+<header>
+	<a href="index.html"> <img src="images/shape_up_logo.png" alt="Shape Up Logo"></a>
+	<h1>Shape Up!</h1>
+	<h3 id="header2">Find the best fit for you</h3>
+</header>
+
+	<nav id="mobile_menu"></nav>
+    <nav id="nav_menu">
+        <ul>
+            <li><a href="index.html" >Home</a></li>
+            <li><a href="strength/index.html">Strength Training</a></li>
+            <li><a href="cardio/index.html">Cardio Exercises</a></li>
+            <li><a href="stress/index.html">Stress Relief</a></li>
+            <li><a href="diet/index.html" class="current">Healthy Diets</a></li>
+        </ul>
+    </nav>
+	
 	<main>
-	    <h1>Calorie Counter</h1>
-		<h2>Under Construction</h2>	      
+		<article>
+			<table>
+				<figcaption>Calorie Counter</figcaption>
+				<thead>
+					<tr class="head1">
+						<th class="left">Category</th>
+						<th class="left">Food</th>
+						<th class="left">Serving Size</th>
+						<th class="left">Calories</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<th id="Beef" class="left" rowspan="2">Beef</th>
+						<td class="left">Frankfurter, Beef</td>
+						<td class="left">1 each</td>
+						<td>184</td>
+					</tr>
+					<tr>
+						<td class="left">T-Bone Steak</td>
+						<td class="left">8 ounces</td>
+						<td>402</td>
+					</tr>
+					<tr>
+						<th id="Bread" class="left" rowspan="2">Bread</th>
+						<td class="left">Bagel, sliced</td>
+						<td class="left">1 slice</td>
+						<td>60 to 80</td>
+					</tr>
+					<tr>
+						<td class="left">English Muffin</td>
+						<td class="left">1 cup</td>
+						<td>135</td>
+					</tr>
+					<tr>
+						<th id="Cereal" class="left" rowspan="2">Cereal</th>
+						<td class="left">Cheerios</td>
+						<td class="left">1 cup</td>
+						<td>110</td>
+					</tr>
+					<tr>
+						<td class="left">Oatmeal, quick</td>
+						<td class="left">1 cup cooked</td>
+						<td>145</td>
+					</tr>
+					<tr>
+						<th id="Cheese" class="left" rowspan="3">Cheese</th>
+						<td class="left">American</td>
+						<td class="left">1 ounce</td>
+						<td>106</td>
+					</tr>
+					<tr>
+						<td class="left">Cheddar</td>
+						<td class="left">1 ounce</td>
+						<td>114</td>
+					</tr>
+					<tr>
+						<td class="left">Cottage Cheese, regular</td>
+						<td class="left">1/2 cup</td>
+						<td>117</td>
+					</tr>
+					<tr>
+						<th id="Fruit" class="left" rowspan="2">Fruit</th>
+						<td class="left">Apple</td>
+						<td class="left">1 medium</td>
+						<td>80</td>
+					</tr>
+					<tr>
+						<td class="left">Banana</td>
+						<td class="left">1</td>
+						<td>105</td>
+					</tr>
+					<tr>
+						<th id="Vegetables" class="left" rowspan="3">Vegetables</th>
+						<td class="left">Corn, fresh</td>
+						<td class="left">1 medium ear</td>
+						<td>88</td>
+					</tr>
+					<tr>
+						<td class="left">Carrot, raw</td>
+						<td class="left">1 medium</td>
+						<td>25</td>
+					</tr>
+					<tr>
+						<td class="left">Celery</td>
+						<td class="left">1 large stalk</td>
+						<td>9</td>
+					</tr>
+					<tr>
+						<th class="left" rowspan="7">Miscellaneous</th>
+						<td class="left">Milk, whole</td>
+						<td class="left">1 cup</td>
+						<td>157</td>
+					</tr>
+					<tr>
+						<td class="left">Eggs</td>
+						<td class="left">1</td>
+						<td>70</td>
+					</tr>
+					<tr>
+						<td class="left">Peanut Butter</td>
+						<td class="left">2 tablespoons</td>
+						<td>188</td>
+					</tr>
+					<tr>
+						<td class="left">Pasta</td>
+						<td class="left">1/2 cup dry</td>
+						<td>200</td>
+					</tr>
+					<tr>
+						<td class="left">Rice</td>
+						<td class="left">1 cup cooked</td>
+						<td >204</td>
+					</tr>
+					<tr>
+						<td class="left">Canned tuna, in water</td>
+						<td class="left">2 ounces</td>
+						<td>70</td>
+					</tr>
+					<tr>
+						<td class="left">Baked Potato</td>
+						<td class="left">1 medium</td>
+						<td>130</td>
+					</tr>
+				</tbody>
+				<tfoot>
+					<td scope="row" colspan="4" class="left">Note: Contact us to get a detailed list of food calories.</td>
+				</tfoot>
+			</table>
+		</article>
+		<aside> 
+			<h2 id="AR">Additional resources</h2>
+			<nav>
+			<blockquote>
+			<ul id="AR1">
+				<li> <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9710390/" class="class2" >Physical activity and health</a></li>
+				<li> <a href="https://www.mayoclinic.org/healthy-lifestyle/fitness/in-depth/stretching/art-20546848" class="class2" >Stretching Exercises</a></li>
+				<li> <a href="https://www.mayoclinic.org/healthy-lifestyle/fitness/in-depth/strength-training/art-20046670" class="class2" >Strength training</a></li>
+				<li> <a href="https://www.healthline.com/health/fitness-exercise/cardio-exercises-list" class="class2" >Cardiovascular training</a></li>
+				<li> <a href="https://www.self.com/gallery/power-yoga-workout" class="class2" >Yoga workout</a></li>
+			</ul>
+			</blockquote>
+			</nav>
+		</aside>
     </main>
+	<footer>
+        <p>&copy; 2022 Shape Up!</p>
 </body>
 </html>

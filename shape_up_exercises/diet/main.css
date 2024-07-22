@@ -1,0 +1,371 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 100%;
+    max-width: 1024px;
+    width: 95%;
+    margin: 0 auto;
+    display: grid;
+    grid-template: repeat(4, auto) / 1fr;
+    grid-gap: 1.5em;
+    grid-template-areas: 
+        "head"
+        "navi"
+        "main"
+        "foot";
+}
+
+header {
+    grid-area: head;
+    padding: 10px;
+    padding-left: 5px;
+    width: 100%;
+    border-bottom: 0.125em solid steelblue;
+    background-image: linear-gradient(
+        white 0%, rgb(174, 207, 235) 100%);
+    margin: 0;
+}
+
+main {
+    grid-area: main;
+    padding: 2em;
+    display: grid;
+    grid-template: auto / 1fr 60%;
+    grid-gap: 2%;
+    grid-template-areas: "arti side";
+    margin-top: -50px;
+}
+
+article {
+    grid-area: side;
+}
+aside {
+    grid-area: arti;
+    padding: 5%;
+}
+
+footer {
+    grid-area: foot;
+    background-color: steelblue;
+    height: 3em;
+    font-size: 0.8em;
+    text-align: center;
+    color: white;
+    margin-top: -40px;
+}
+
+#header2 {
+    font-size: 1.35em;
+}
+
+aside blockquote ul {
+    padding-left: 0;
+    list-style-position: inside;
+    margin-left: 0;
+    font-weight: bold;
+}
+
+aside blockquote ul li {
+    margin-bottom: 0.25em;
+    padding-left: -1.25em; 
+    text-indent: -2.5em;
+}
+a.class1:link, a.class1:visited {
+    color: maroon;
+}
+
+a.class1:hover, a.class1:focus { color: steelblue;
+    font-weight: bold;}
+
+a.class2:link, a.class2:visited {
+    color: steelblue;
+    font-weight: bold
+}
+
+a.class2:hover, a.class2:focus { color: maroon }
+
+ul li {
+    margin-bottom: 0.25em;
+}
+
+#AR {
+    color: maroon;
+    align-items: center;
+    text-decoration: none;
+}
+
+#mobile_menu {
+    display: none;
+}
+
+h3 img {
+    float: right;
+    border: 1px solid black;
+    margin: 0.5em;
+    margin-left: 1em;
+    width: 100%;
+}
+
+#StressR {
+    font-family: "Playwrite CU", cursive;
+  font-optical-sizing: auto;
+  font-weight: 10;
+  font-style: normal;
+}
+
+/* CSS for operation of the menus */
+#nav_menu {
+    grid-area: navi;
+    width: 100%;
+    background-color: steelblue;
+    margin: 0;
+    margin-top: -25px;
+    width: 101.5%;
+}
+
+#nav_menu ul {
+    display: grid;
+    grid-template: auto / repeat(5, 1fr);
+    align-content: center;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+#nav_menu ul li {
+    width: 100%;
+    list-style: none;
+}
+
+#nav_menu ul li:hover > ul {
+    display: block;
+}
+
+#nav_menu > ul::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+#nav_menu ul li a {
+    display: block;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    display: block;
+    width: 100%;
+    padding: 1em 0;
+    background-color: steelblue;
+    color: white;
+    font-weight: bold;
+}
+
+#nav_menu ul li a.current {
+    color: black;
+}
+#nav_menu ul li a:hover, #nav_menu ul li a:focus {
+    background-color: lightsteelblue;
+}
+#nav_menu ul ul li {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    color: steelblue;
+    text-shadow: 2px 2px 4px;
+    font-style: italic;
+}
+
+h3 {
+    color: maroon;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    float: left;
+    margin-right: 1em;
+    width: 100%;
+    max-width: 140px;
+    min-width: 70px;
+    height: auto;
+}
+
+table {
+    border-collapse: collapse;
+    width: 107.5%;
+}
+th, td {
+    padding: 0.5em 0.5em;
+    text-align: right;
+}
+.left {
+    text-align: left !important;
+    text-align: top;
+    vertical-align: top;
+}
+
+.head1 {
+    text-align: left !important;
+    color: maroon;
+}
+figcaption {
+    display: block;
+    font-weight: bold;
+    text-align: center;
+    font-size: 150%;
+    padding: 1em;
+}
+
+
+@media only screen and (max-width: 767px) {
+    body {
+        grid-template-areas: 
+            "head"
+            "mobile_menu"
+            "main"
+            "side"
+            "foot";
+        grid-template-columns: 1fr;
+        grid-gap: 1em;
+    }
+
+    header {
+        text-align: center;
+    }
+
+    #nav_menu {
+        display: none;
+    }
+
+    #mobile_menu {
+        grid-area: mobile_menu;
+        display: block;
+        margin-top: -16px;
+        width: 102%;
+    }
+    .slicknav_menu {
+        background-color: steelblue !important;
+        padding: 3px !important;
+        color: white;
+    }
+    
+    .slicknav_nav {
+        background-color: steelblue !important;
+    }
+    
+    .slicknav_btn {
+        background-color: steelblue !important;
+        color: white !important;
+    }    
+
+    main {
+        grid-template-areas: 
+            "side"
+            "arti";
+        grid-template-columns: 1fr;
+        padding: 1em;
+    }
+}
+
+
+#mobile_menu {
+    display: none;
+}
+
+@media only screen and (max-width: 900px) {
+    body {
+        box-shadow: none;
+        font-size: 90%;
+    }
+
+    h1 {
+        font-size: 90%;
+    }
+}
+
+/* Media query for max-width 767px */
+@media screen and (max-width: 767px) {
+    #nav_menu {display: none;}
+    #mobile_menu {
+        display: block;
+        background-color: steelblue !important;
+        color: white;
+        padding: 3px;
+    }
+    #mobile_menu a:active {
+        color: steelblue !important;
+    }
+    .slicknav_menu {
+        background-color: steelblue !important;
+        padding: 3px !important;
+    }
+    .slicknav_nav ul,
+    .slicknav_nav a {
+        background-color: steelblue !important;
+    }
+    
+    .slicknav_nav a:hover {
+        background-color: lightsteelblue !important;
+    }
+    .slicknav_nav {
+        background-color: steelblue !important;
+    }
+    
+    .slicknav_btn {
+        background-color: steelblue !important;
+        color: white !important;
+    }
+    header h1 {
+        font-size: 200%;}
+        
+    body {
+        width: 100%;
+        margin: 0;
+        border: none;
+    }
+    header img {float: left;}
+    header, footer p {text-align: left;}
+    article {
+        width: 95%;
+        float: none;
+    }
+    aside {
+        width: 91%;
+        float: none;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    main, aside {
+        width: 100%;
+        float: none;
+        padding-left: 0;
+    }
+}
+
+/* Media query for max-width 479px */
+@media screen and (max-width: 479px) {
+    body {
+        font-size: 0.9em;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    #nav_menu ul {
+        display: none;
+    }
+
+    main, aside {
+        width: 100%;
+        float: none;
+        padding-left: 0;
+    }
+}
