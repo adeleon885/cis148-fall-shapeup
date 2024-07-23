@@ -22,6 +22,7 @@ img {
     max-width: 140px;
     min-width: 70px;
     height: auto;
+    margin-bottom: 0;
 }
 main { 
     clear: both;
@@ -104,12 +105,28 @@ footer {
     padding-bottom: 75px;
 }
 
-#AR {
+#medfoot {
+    padding-bottom: 0.5em;
+}
+#Meditate {
     color: maroon;
     align-items: center;
     text-decoration: none;
 }
-
+#what {
+    box-shadow: none;
+    font-style: normal;
+    text-shadow: none;
+    color: black;
+}
+#why {
+    text-align: left;
+    text-indent: 0;
+    list-style-position: outside;
+    margin: -1em;
+    margin-top: 1em;
+    margin-right: -0.5em;
+}
 header {
     padding: 10px;
     padding-left: 5px;
