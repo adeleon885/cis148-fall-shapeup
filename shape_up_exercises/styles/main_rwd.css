@@ -64,8 +64,8 @@ aside blockquote ul {
 
 aside blockquote ul li {
     margin-bottom: 0.25em;
-    padding-left: -1.25em; /* Adjust padding as needed */
-    text-indent: -2.5em; /* Negative text indent for bullet alignment */
+    padding-left: -1.25em;
+    text-indent: -2.5em; 
 }
 
 a.class1:link, a.class1:visited {
@@ -328,4 +328,31 @@ a {
     width: 32px;
     padding-bottom: 1em;
     float: left;
+    /* transition: transform 2s ease; */
+    transition: width 2s ease;
 }
+
+.icons:hover {
+    /* transform: scale(2); */
+    width: 64px;
+}
+
+header h1 {
+    animation: moveAndColorChange 8s ease-in-out 1;
+  }
+  
+  @keyframes moveAndColorChange {
+    0% {
+      color: steelblue;
+      margin-left: 0;
+    }
+    50% {
+      color: maroon;
+      margin-left: 95%;
+    }
+    90% {
+      color: steelblue;
+      margin-left: 0;
+    }
+  }
+  
