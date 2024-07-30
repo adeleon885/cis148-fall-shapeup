@@ -1,0 +1,366 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 100%;
+    max-width: 1024px;
+    width: 95%;
+    margin: 0 auto;
+    padding: 0 1em;
+}
+
+header {
+    border-bottom: 0.125em solid steelblue;
+    background-image: linear-gradient(
+        white 0%, rgb(174, 207, 235) 100%);
+    padding: 1em 0.5em;
+    width: 95%;
+}
+
+img {
+    float: left;
+    margin-right: 1em;
+    width: 100%;
+    max-width: 140px;
+    min-width: 70px;
+    height: auto;
+}
+main { 
+    clear: both;
+    width: 95%;
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 1em;
+    grid-template: auto / 1fr 65%;
+    grid-gap: 2%;
+    grid-template-areas: "arti side";
+}
+
+article {
+    grid-area: side;
+    padding-left: 2em;
+}
+aside {
+    grid-area: arti;
+    padding: 5%;
+}
+
+h1 {
+    color: steelblue;
+    text-shadow: 2px 2px 4px;
+    font-style: italic;
+}
+
+#header2 {
+    font-size: 1.35em;
+}
+
+aside blockquote ul {
+    padding-left: 0;
+    list-style-position: inside;
+    margin-left: 0;
+}
+
+aside blockquote ul li {
+    margin-bottom: 0.25em;
+    padding-left: -1.25em;
+    text-indent: -2.5em; 
+}
+
+a.class1:link, a.class1:visited {
+    color: maroon;
+}
+
+a.class1:hover, a.class1:focus { color: steelblue }
+
+a.class2:link, a.class2:visited {
+    color: steelblue;
+}
+
+a.class2:hover, a.class2:focus { color: maroon }
+
+footer p {
+    font-size: 0.8em;
+    text-align: center;
+    color: white;
+    padding: 1.5em;
+    margin: -20px;
+}
+
+ul li {
+    margin-bottom: 0.25em;
+}
+
+aside {
+    width: 100%;
+    float: left;
+    padding-left: 1em;
+}
+
+footer {
+    clear: both;
+    background-color: steelblue;
+    height: auto;
+    padding: 1em;
+}
+
+#AR {
+    color: maroon;
+    align-items: center;
+    text-decoration: none;
+}
+
+header {
+    padding: 10px;
+    padding-left: 5px;
+    width: 95%;
+}
+
+/* CSS for operation of the menus */
+#nav_menu {
+    width: 100%;
+}
+#nav_menu ul {
+    list-style-type: none;
+    position: relative;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+#nav_menu ul li {
+    float: left;
+    position: relative;
+}
+#nav_menu ul ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    margin-top: 0;
+    padding: 0;
+}
+#nav_menu ul ul li ul {
+    position: absolute;
+    left: 100%;
+    top: 0;
+}
+#nav_menu ul li.lastitem ul li ul {
+    left: -100%;
+}
+#nav_menu ul li:hover > ul {
+    display: block;
+}
+
+#nav_menu > ul::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+/* CSS for formatting the menus */
+#nav_menu ul {
+    margin: 0;
+    padding: 0;
+    max-width: 96.5%;
+}
+#nav_menu ul ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    margin-top: 0;
+    padding: 0;
+}
+
+#nav_menu ul li {
+    width: 20%;
+}
+#nav_menu ul li a {
+    text-align: center;
+    display: block;
+    width: 100%;
+    padding: 1em 0;
+    text-decoration: none;
+    background-color: steelblue;
+    color: white;
+    font-weight: bold;}
+#nav_menu ul li.lastitem a {
+    width: 100%;
+}
+#nav_menu ul li a.current {
+    color: black;
+}
+#nav_menu ul li a:hover, #nav_menu ul li a:focus {
+    background-color: lightsteelblue;
+}
+#nav_menu ul ul li {
+    margin: 0;
+    padding: 0;
+}
+
+h3 {
+    color: maroon;
+}
+
+a {
+    text-decoration: none;
+}
+
+#mobile_menu {
+    display: none;
+}
+
+@media only screen and (max-width: 900px) {
+    body {
+        box-shadow: none;
+        font-size: 90%;
+    }
+
+    h1 {
+        font-size: 90%;
+    }
+}
+
+/* Media query for max-width 767px */
+@media screen and (max-width: 767px) {
+    #nav_menu {display: none;}
+    #mobile_menu {
+        display: block;
+        background-color: steelblue !important;
+        color: white;
+        padding: 3px;
+    }
+    #mobile_menu a:active {
+        color: steelblue !important;
+    }
+    .slicknav_menu {
+        background-color: steelblue !important;
+        padding: 3px !important;
+    }
+    .slicknav_nav ul,
+    .slicknav_nav a {
+        background-color: steelblue !important;
+    }
+    
+    .slicknav_nav a:hover {
+        background-color: lightsteelblue !important;
+    }
+    .slicknav_nav {
+        background-color: steelblue !important;
+    }
+    
+    .slicknav_btn {
+        background-color: steelblue !important;
+        color: white !important;
+    }
+    header h1 {
+        font-size: 200%;}
+        
+    body {
+        width: 100%;
+        margin: 0;
+        border: none;
+    }
+    header img {float: left;}
+    header {text-align: left;}
+    article {
+        width: 95%;
+        float: none;
+    }
+    aside {
+        width: 91%;
+        float: none;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    main, aside {
+        width: 100%;
+        float: none;
+        padding-left: 0;
+    }
+}
+fieldset {
+    margin-top: 1em;
+    margin-bottom: 1em;
+    padding-top: 0.5em;
+}
+legend {
+    color: black;
+    font-weight: bold;
+    font-size: 120%;
+    margin-bottom: 0.5em;
+}
+label {
+    clear: both;
+    float: right;
+    width: 10em;
+    text-align: right;
+}
+input, select {
+    width: 5em;
+    margin-left: 0.5em;
+    margin-bottom: 0.5em;
+}
+input:required {
+    border: 2px solid black;
+}
+input:valid {
+    border: 1px solid grey;
+}
+input:invalid {
+    box-shadow: none;
+}
+#buttons input {
+    width: 16em;
+    float: right;
+}
+.horizontal-form label {
+    display: inline;
+}
+
+div {
+    display: table;
+    display: inline;
+}
+
+fieldset form label {
+    float: left;
+    display: inline;
+}
+
+
+/* Media query for max-width 479px */
+@media screen and (max-width: 479px) {
+    body {
+        font-size: 0.9em;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    #nav_menu ul {
+        display: none;
+    }
+
+    main, aside {
+        width: 100%;
+        float: none;
+        padding-left: 0;
+    }
+}
+
+#credits, #credits a, #credits a:link, #credits a:visited, #credits a:active {
+    color: black;
+}
+
+.icons {
+    width: 32px;
+    padding-bottom: 1em;
+    float: left;
+}
+
+h2 {
+    color: maroon;
+}

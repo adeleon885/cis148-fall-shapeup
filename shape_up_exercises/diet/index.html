@@ -1,15 +1,99 @@
 <!DOCTYPE html>
 
 <html lang="en">
-<head>
-	<meta charset="utf-8">
-	<title>Shape Up! | Healthy Diet</title>
-</head>
+	<head>
+		<meta charset="utf-8" />
+		<title>Shape Up</title>
+		<link rel="shortcut icon" href="images/favicon.ico">
+		<link rel="stylesheet" href="/diet/diet.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="styles/slicknav.css">
+		<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+		<script src="/js/image_swap.js"></script>
+		<script src="js/jquery.slicknav.min.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function(){
+				$('#nav_menu').slicknav({prependTo:"#mobile_menu"});
+			});
+		</script>
+	</head>
 
 <body>
-	<main>
-	    <h1>Healthy Diet</h1>
-		<h2>Under Construction</h2>
-	</main>
+	<body>
+		<header>
+			<a href="index.html"> <img src="/images/shape_up_logo.webp" alt="Shape Up Logo"></a>
+			<h1>Shape Up!</h1>
+			<h3 id="header2">Find the best fit for you</h3>
+		</header>
+		<nav id="mobile_menu"></nav>
+		<nav id="nav_menu">
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="strength/index.html">Strength Training</a></li>
+				<li><a href="cardio/index.html">Cardio Exercises</a></li>
+				<li><a href="stress/index.html">Stress Relief</a>
+					<ul>
+						<li><a href="stress/index.html">What is Stress?</a></li>
+						<li><a href="stress/tips.html">5 Helpful Tips</a></li>
+						<li><a href="stress/meditate.html">Meditation</a></li>
+						<li><a href="stress/vipassana.html">Vipassana</a></li>
+					</ul>
+				</li>
+				<li><a href="diet/index.html" class="current">Healthy Diets</a>
+					<ul>
+						<li><a href="diet/index.html">Why a Healthy Diet?</a></li>
+						<li><a href="diet/meals.html">Plan Your Meals</a></li>
+						<li><a href="diet/calories.html">Count Your Calories</a></li>
+						<li><a href="diet/bmi.html">Calculate Your BMI</a></li>
+					</ul>
+				</li>
+			</ul>
+		</nav>
+	
+		<main>
+			<aside>
+				<h2 id="AR">Additional resources</h2>
+				<blockquote>
+				<ul>
+					<li> <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9710390/" class="class2" >Physical activity and health</a></li>
+					<li> <a href="https://www.mayoclinic.org/healthy-lifestyle/fitness/in-depth/stretching/art-20546848" class="class2" >Stretching Exercises</a></li>
+					<li> <a href="https://www.mayoclinic.org/healthy-lifestyle/fitness/in-depth/strength-training/art-20046670" class="class2" >Strength training</a></li>
+					<li> <a href="https://www.healthline.com/health/fitness-exercise/cardio-exercises-list" class="class2" >Cardiovascular training</a></li>
+					<li> <a href="https://www.self.com/gallery/power-yoga-workout" class="class2" >Yoga workout</a></li>
+				</ul>
+				</blockquote>
+			</aside>
+			<article>
+				<h1>Why a healthy diet is important</h1>
+				<p>Although exercise can help you lose body fat and tone muscles, it's also important to have a healthy diet. In the short term, a poor diet can contribute to stress, tiredness, and the capacity to work. Over time, it may add to the risk of developing some illnesses and health problems such as obesity, tooth decay, high blood pressure, high cholesterol, heart disease, some cancers, depression, osteoporosis, and type-2 diabetes. You've probably heard the old saying, "you are what you eat." So, to be in shape, you need to eat right.
+				</p>
+				<h2>What is a healthy diet?</h2>
+				<p>A healthy diet is more than eating a salad for lunch or buying fat-free yogurt. A healthy diet is a balanced diet that gives your body the nutrients it needs to function properly. And that means getting the majority of your daily calories from fresh fruits and vegetables, whole grains, legumes, nuts, and lean proteins.</p>
+				<h2>When should you start?</h2>
+				<p>Right now! No matter how old you are, how you've eaten in the past, whether you exercise daily or almost never, the benefits of a healthy diet begin today... if you start today!</p>
+				<h2>Where can you find health food?</h2>
+				<p>Healthy food is available almost everywhere. You just have to plan ahead. Almost all restaurants and grocery stores offer healthy options nowadays. And, although it may be more expensive than unhealthy food, the extra money you spend on buying healthy food will be repaid many times over from a healthy life.</p>
+				<h2>How to make healthier food choices</h2>
+				<p>Click on an image to display a healthier chocie.</p>
+				<div id="image_list">
+					<ul>
+						<li><a href="/images/food/breakfast_good.jpg" title="Healthy Food 1"><img src="/images/food/breakfast_bad.jpg" alt="Food 1"></a></li>
+						<li><a href="/images/food/desert_good.jpg" title="Healthy Food 2"><img src="/images/food/desert_bad.jpg" alt="Food 2"></a></li>
+						<li><a href="/images/food/dinner_good.jpg" title="Healthy Food 3"><img src="/images/food/dinner_bad.jpg" alt="Food 3"></a></li>
+						<li><a href="/images/food/lunch_good.jpg" title="Healthy Food 4"><img src="/images/food/lunch_bad.jpg" alt="Food 4"></a></li>
+					</ul>
+				</div><br><br><br><br><br><br><br><br>
+				<h2>Healthy Food</h2>
+				<div id="image_container">
+					<img id="image" src="/images/food/healthy_food.jpg" alt="Healthy Food"><br>
+				</div>
+			</article>
+		</main>
+		<footer>
+			<p>&copy; 2022 Shape Up!</p>
+			<p id="credits">Icons made by <b><a href="https://www.flaticon.com/free-icons/workout" title="workout icons">Flat Icons Design</a>, <a href="https://www.flaticon.com/free-icons/heart" title="heart icons">Heart icons created by Freepik</a>, 
+				<a href="https://www.flaticon.com/free-icons/meditation" title="meditation icons">Meditation icons created by Hilmy Abiyyu A.</a>, <a href="https://www.flaticon.com/free-icons/food-and-restaurant" title="food and restaurant icons">Food and restaurant icons created by Putra Arif Munazar</a></b> are licenced by CC 3.0 BY
+			</p>
+		</footer>
 </body>
 </html>
